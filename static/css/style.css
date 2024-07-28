@@ -1,0 +1,14 @@
+/*Sticky Footer*/
+html,
+body {
+  height: 100%;
+  background-color: #f8dec6;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+}
+/*Sticky Footer*/

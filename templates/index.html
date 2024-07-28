@@ -1,0 +1,17 @@
+{%extends "base.html"%}{%block title%}Home{%endblock%}{%block content%}
+
+<div class="px-4 py-5 my-5 text-center">
+  <img
+    class="d-block mx-auto mb-4 rounded-circle"
+    src="static/assets/main.png"
+    alt=""
+    width="200"
+    height="200"
+  />
+  <p class="pb-5">Only PNG,JPEG,JPG Images.</p>
+  <form method="post" enctype="multipart/form-data">
+    {{forms.hidden_tag()}}{{forms.image.label}}{{forms.image()}}
+    {{forms.submit()}}
+  </form>
+</div>
+{%endblock%}
